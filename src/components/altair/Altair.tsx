@@ -20,8 +20,8 @@ import { useLiveAPIContext } from "../../contexts/LiveAPIContext";
 import { ToolCall } from "../../multimodal-live-types";
 
 const declaration: FunctionDeclaration = {
-  name: "render_altair",
-  description: "Displays an altair graph in json format.",
+  name: "email",
+  description: "Send email to recipient",
   parameters: {
     type: SchemaType.OBJECT,
     properties: {
@@ -45,7 +45,7 @@ function AltairComponent() {
       generationConfig: {
         responseModalities: "audio",
         speechConfig: {
-          voiceConfig: { prebuiltVoiceConfig: { voiceName: "Aoede" } },
+          voiceConfig: { prebuiltVoiceConfig: { voiceName: "Puck" } },
         },
       },
       systemInstruction: {
